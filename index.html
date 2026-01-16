@@ -8,47 +8,59 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <h1>Pixel Art Editor</h1>
+    <div class="sidebar">
+      <input type="number" value="0">
+      <input type="number" value="0">
+    </div>
 
-    <div class="form-container">
-      <div class="form-item">
-        <label for="quantity-of-pixels">
-          Количество ячеек:
-          <input
-            type="number"
-            id="quantity-of-pixels"
-            value="10"
-            min="5"
-            max="26"
-            step="1"
-          />
-        </label>
+    <div class="main">
+      <h1>Pixel Art Editor</h1>
+  
+      <div class="form-container">
+        <div class="form-item">
+          <label for="quantity-of-pixels">
+            Количество ячеек:
+            <input
+              type="number"
+              id="quantity-of-pixels"
+              value="6"
+              min="5"
+              max="26"
+              step="1"
+            />
+          </label>
+        </div>
+  
+        <div class="form-item">
+          <label for="size-of-pixel">
+            Размер ячеек:
+            <input
+              type="number"
+              id="size-of-pixel"
+              value="100"
+              min="20"
+              max="100"
+              step="10"
+            />
+          </label>
+        </div>
       </div>
-
-      <div class="form-item">
-        <label for="size-of-pixel">
-          Размер ячеек:
-          <input
-            type="number"
-            id="size-of-pixel"
-            value="30"
-            min="20"
-            max="50"
-            step="10"
-          />
-        </label>
+  
+      <div class="wrapper">
+        <div id="color-picker-container"></div>
+        <div id="pixels-container"></div>
+      </div>
+  
+      <div>
+        <button id="clear-button">Очистить</button>
+        <button id="grid-toggle-button">Сетка</button>
+        <button id="save-button">Сохранить</button>
       </div>
     </div>
 
-    <div class="wrapper">
-      <div id="color-picker-container"></div>
-      <div id="pixels-container"></div>
-    </div>
-
-    <div>
-      <button id="clear-button">Очистить</button>
-      <button id="grid-toggle-button">Сетка</button>
-      <button id="save-button">Сохранить</button>
+    <div class="sidebar">
+      <input type="number" value="0">
+      <input type="number" value="0">
     </div>
   </body>
 </html>

@@ -8,9 +8,6 @@ body {
   min-height: 100dvh;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
 
   background-image: url("images/background.jpg");
   background-size: cover;
@@ -20,6 +17,32 @@ body {
   @media (max-width: 560px) {
     background-image: unset;
   }
+}
+
+.main {
+  width: 100%;
+  min-height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.sidebar {
+  width: 100%;
+  min-height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 100px;
+}
+
+.sidebar input {
+  width: 200px;
 }
 
 button {
@@ -46,6 +69,8 @@ h1 {
   margin: 2rem 1rem;
 
   font-family: "Courier New", Courier, monospace;
+  
+  color: #fff;
 }
 
 input {
@@ -56,6 +81,8 @@ input {
   padding: 5px;
   width: 120px;
   background: #fff;
+
+  color: #000;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -69,6 +96,8 @@ label {
   width: fit-content;
 
   font-weight: bold;
+
+  color: #fff;
 }
 
 #color-picker-container {
